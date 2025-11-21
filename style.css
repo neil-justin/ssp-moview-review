@@ -1,0 +1,235 @@
+ 
+        html,body{   
+        margin: 0;
+        padding:0;
+        background-color: black;
+    }
+ 
+     .navi{
+            color: rgb(230, 7, 7);
+            background-color: rgb(23, 27, 26);
+            height: 80px;
+            font-size: 50px;
+            margin-top: 0px;
+           
+            display: flex;
+            align-items: center;
+            transition:0.5s;
+        }
+
+        .navi:hover{
+            height: 90px;
+            background-color: rgb(49, 48, 48);
+            
+        }
+
+        #mov{
+            font-size: 47px;
+            margin-left: 25px;
+            transition: 0.5s;
+        }
+        #mov:hover{
+            font-size: 50px;
+            color: rgb(231, 223, 223);
+        }
+        #home{
+            color: white;
+            font-size: 28px;
+            margin-left: 290px;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+
+        #home:hover{
+            color: rgb(170, 147, 147);
+            font-size:33px ;
+        }
+        #details{
+             color: white;
+            font-size: 25px;
+            margin-left: 50px;
+            transition: 0.5s;
+            text-decoration: none;
+
+        }
+
+        #details:hover{
+            color: rgb(170, 147, 147);
+            cursor: pointer;
+            font-size: 30px;
+        }
+        #critique{
+            color: white;
+            font-size: 25px;
+            margin-left: 50px;
+            transition: 0.5s;
+            text-decoration: none;
+
+        }
+        #critique:hover{
+            color:  rgb(170, 147, 147);
+            cursor: pointer;
+            font-size: 30px;
+        }
+        #about{
+            color: white;
+            font-size: 25px;
+            margin-left: 50px;
+            transition: 0.5s;
+
+        }
+        #about:hover{
+            color: rgb(170, 147, 147);
+            cursor: pointer;
+            font-size: 30px;
+        }
+
+        .coments{
+
+            background-color: black ;
+            border: 2px solid rgb(228, 40, 40);
+            width: 1300px;
+            margin-left: 20px;
+            border-radius: 20px;
+            margin-top: 10px;
+            height: 540px;
+            position: relative; 
+            display: flex;
+            padding-right: 15px;
+            
+        }
+
+        .stud1{
+            background-color: rgb(61, 59, 59);
+            height: 110px;
+            width: 600px;
+            margin-top:15px;
+            margin-left:20px;
+            border-radius: 20px;
+            padding-bottom: 3px;
+            display: inline-block;
+            color: white;
+            transition: 0.5s;
+            text-decoration: none;
+        }
+        .stud1:hover{
+            background-color: rgb(201, 199, 199);
+            color:  rgb(63, 63, 63);
+            cursor: pointer;
+            padding-left: 25px  ;
+
+        }
+
+        #stud1{
+            height: 80px;
+            width: 80px;
+            border-radius: 50px;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+        #stud1name{
+            text-decoration: none;
+            display: block;
+            margin-top: -68px;
+            margin-left: 200px;
+            font-size: 40px;
+
+            
+        }
+
+        
+        .stud2{
+            background-color:  rgb(61, 59, 59);
+            height: 110px;
+            width: 600px;
+            margin-top:15px;
+            margin-left:60px;
+            border-radius: 20px;
+            padding-bottom: 3px;
+            display: inline-block;
+            color: white;
+            transition: 0.5s;
+            text-decoration: none;
+            margin-right: 0px;
+
+            
+
+        }
+        .stud2:hover{
+            background-color: rgb(201, 199, 199);
+            color:  rgb(63, 63, 63);
+            cursor: pointer;
+            padding-right: 10px;
+
+        }
+        #stud2{
+             height: 80px;
+            width: 80px;
+            border-radius: 50px;
+            margin-top: 15px;
+            margin-left: 15px;
+            
+        }
+        #stud2name{
+            text-decoration: none;
+            display: block;
+            margin-top: -68px;
+            margin-left: 200px;
+            font-size: 40px;
+            
+        }
+
+
+
+
+
+
+
+
+
+        .popup{
+            display: none; 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .popup-content{
+            background:  rgb(61, 59, 59);
+            color:white;
+            padding: 20px;
+            width: 400px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+            transition: 0.5s;
+
+        }
+
+        .popup-content:hover{
+            background-color: rgb(201, 199, 199);
+            color:  rgb(63, 63, 63);
+            cursor: pointer;
+        }
+        #studwan{
+            font-size: 30px;
+            margin-top: 0px;
+
+        }
+        #studwans{
+            font-size:25px ;
+            font-weight: bold;
+        }
+
+        #closePopup{
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            font-size: 30px;
+            cursor: pointer;
+        }

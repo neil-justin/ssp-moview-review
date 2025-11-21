@@ -1,0 +1,320 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRITIQUE</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+      <nav class="navi">
+                    <h1 id="mov">MOVIE REVIEWS </h1> 
+                    <a id="home" href="Landing.html" target="">Home </a>
+                    <a id="details" href="details.html">DETAILS</a>
+                    <a id="critique" href="critique.html">CRITIQUE</a>
+                    <a id="about">ABOUT US</a>        
+    </nav>
+
+    <div class="coments">
+            <div class="stud1">
+                    <img id="stud1" src="img/dol.jpg"> 
+                    <h2 id="stud1name">Juan Dela Cruz</h2>
+            </div>
+
+            
+            <a href="https://www.facebook.com/"> 
+                 <div class="stud2">
+                        <img id="stud2" src="img/dol.jpg">
+                        <h2 id="stud2name">Labasmo T. Timo</h2>
+                </div>
+            </a>
+    </div>
+
+
+
+
+
+
+    <div id="popup" class="popup">
+            <div class="popup-content">
+                    <span id="closePopup">&times;</span>
+                        <h2 id="studwan">Juand Dela Cruz</h2>
+                    <p id="studwans">This Is a popup messagedfsdfffffffffffffffffffffffffdsffffffffffsd
+                        frgrtgggggggggggggggggg
+                        ggggggggggggggggfdgffffffffffffffffffffffffffffffffffff
+                        ffffffggggggggggggggggggggggggggggggggggggggreeeeeeeeeeee
+                        eeeeeeeeeeeeeeeeeeeeeeezzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+                        zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzffffffffffff 
+                         eeeeeeeeeeeeefdfdf 
+                        fnskc
+                        c cfsdf
+                          
+                    </p>
+            </div>
+    </div>
+
+
+
+
+
+    <script>
+        const stud1 = document.querySelector(".stud1");
+        const popup = document.getElementById("popup");
+        const closeBtn  = document.getElementById("closePopup");
+
+
+    stud1.addEventListener("click",()=> {
+        popup.style.display="flex";
+    });
+
+
+    closeBtn.addEventListener("click", ()=>{
+        popup.style.display="none";
+    });
+
+    popup.addEventListener("click", (e) => {
+        if(e.target===popup){
+            popup.style.display="none";
+        }
+    } );
+    </script>
+    
+</body>
+
+
+</html>  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRITIQUE</title>
+<style>
+html,body{   
+    margin: 0;
+    padding:0;
+    background-color: black;
+}
+
+.navi{
+    color: rgb(230, 7, 7);
+    background-color: rgb(23, 27, 26);
+    height: 80px;
+    font-size: 50px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    transition:0.5s;
+}
+
+.navi:hover{ 
+ height: 90px;
+ background-color: rgb(49, 48, 48);
+  }
+  
+#mov{ font-size: 47px; margin-left: 25px; transition: 0.5s; }
+#mov:hover{ font-size: 50px; color: rgb(231, 223, 223); }
+#home{ color: white; font-size: 28px; margin-left: 290px; text-decoration: none; transition: 0.5s; }
+#home:hover{ color: rgb(170, 147, 147); font-size:33px; }
+#details,#critique,#about{
+    color: white; font-size: 25px; margin-left: 50px; transition: 0.5s; text-decoration: none;
+}
+#details:hover,#critique:hover,#about:hover{ color: rgb(170, 147, 147); cursor: pointer; font-size: 30px; }
+
+.coments{
+    background-color: black ;
+    border: 2px solid rgb(228, 40, 40);
+    width: 1300px;
+    margin: 10px auto;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.stud{
+    background-color: rgb(61, 59, 59);
+    height: 110px;
+    width: 600px; 
+    border-radius: 20px;
+    padding-bottom: 3px;
+    display: flex;
+    align-items: center;
+    color: white;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.stud:hover{
+    background-color: rgb(201, 199, 199);
+    color:  rgb(63, 63, 63);
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.stud img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    margin-left: 15px;
+}
+
+.stud h2{
+    margin-left: 30px;
+    font-size: 40px;
+}
+
+.popup{
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content{
+    background:  rgb(61, 59, 59);
+    color:white;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    transition: 0.5s;
+}
+
+.popup-content:hover{
+    background-color: rgb(201, 199, 199);
+    color:  rgb(63, 63, 63);
+    cursor: pointer;
+}
+
+.close{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.popup-content h2{ font-size: 30px; }
+.popup-content p{ font-size:25px; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<nav class="navi">
+    <h1 id="mov">MOVIE REVIEWS </h1> 
+    <a id="home" href="Landing.html">Home </a>
+    <a id="details" href="details.html">DETAILS</a>
+    <a id="critique" href="critique.html">CRITIQUE</a>
+    <a id="about" href="about.html">ABOUT US</a>        
+</nav>
+
+<div class="coments">
+
+    
+    <div class="column">
+        <div class="stud stud1"><img src="img/dol.jpg"><h2>Juan Dela Cruz</h2></div>
+        <div class="stud stud3"><img src="img/dol.jpg"><h2>Stud 3</h2></div>
+        <div class="stud stud4"><img src="img/dol.jpg"><h2>Stud 4</h2></div>
+        <div class="stud stud5"><img src="img/dol.jpg"><h2>Stud 5</h2></div>
+        <div class="stud stud6"><img src="img/dol.jpg"><h2>Stud 6</h2></div>
+        <div class="stud stud7"><img src="img/dol.jpg"><h2>Stud 7</h2></div>
+    </div>
+
+    
+    <div class="column">
+        <div class="stud stud2"><img src="img/dol.jpg"><h2>Labasmo T. Timo</h2></div>
+        <div class="stud stud8"><img src="img/dol.jpg"><h2>Stud 8</h2></div>
+        <div class="stud stud9"><img src="img/dol.jpg"><h2>Stud 9</h2></div>
+        <div class="stud stud10"><img src="img/dol.jpg"><h2>Stud 10</h2></div>
+        <div class="stud stud11"><img src="img/dol.jpg"><h2>Stud 11</h2></div>
+        <div class="stud stud12"><img src="img/dol.jpg"><h2>Stud 12</h2></div>
+    </div>
+
+</div>
+
+<!--para to sa popup  shet-->
+<div id="popup1" class="popup">
+    <div class="popup-content"><span class="close" data-popup="popup1">&times;</span>
+        <h2>Juan Dela Cruz</h2>
+        <p>mesasge goes here----.</p>
+    </div>
+</div>
+
+
+<div id="popup2" class="popup">
+    <div class="popup-content">
+        <span class="close" data-popup="popup2">&times;</span>
+            <h2>Labasmo T. Timo</h2>
+                <p>Message for stud2 goes here...</p>
+    </div>
+</div>
+
+<div id="popup3" class="popup">
+    <div class="popup-content"><span class="close" data-popup="popup3">&times;</span>
+        <h2>Stud 3</h2><p>Message for stud3 goes here...</p>
+    </div>
+</div>
+
+<div id="popup4" class="popup">
+    <div class="popup-content">
+        <span class="close" data-popup="popup4">&times;</span>
+            <h2>Stud 4</h2><p>Message for stud4 goes here...</p>
+    </div>
+</div>
+
+<div id="popup5" class="popup">
+    <div class="popup-content">
+        <span class="close" data-popup="popup5">&times;</span>
+            <h2>Stud 5</h2><p>Message for stud5 goes here...</p></div></div>
+<div id="popup6" class="popup"><div class="popup-content">
+    <span class="close" data-popup="popup6">&times;</span>
+        <h2>Stud 6</h2><p>Message for stud6 goes here...</p>
+</div>
+    </div>
+<div id="popup7" class="popup"><div class="popup-content"><span class="close" data-popup="popup7">&times;</span><h2>Stud 7</h2><p>Message for stud7 goes here...</p></div></div>
+<div id="popup8" class="popup"><div class="popup-content"><span class="close" data-popup="popup8">&times;</span><h2>Stud 8</h2><p>Message for stud8 goes here...</p></div></div>
+<div id="popup9" class="popup"><div class="popup-content"><span class="close" data-popup="popup9">&times;</span><h2>Stud 9</h2><p>Message for stud9 goes here...</p></div></div>
+<div id="popup10" class="popup"><div class="popup-content"><span class="close" data-popup="popup10">&times;</span><h2>Stud 10</h2><p>Message for stud10 goes here...</p></div></div>
+<div id="popup11" class="popup"><div class="popup-content"><span class="close" data-popup="popup11">&times;</span><h2>Stud 11</h2><p>Message for stud11 goes here...</p></div></div>
+<div id="popup12" class="popup"><div class="popup-content"><span class="close" data-popup="popup12">&times;</span><h2>Stud 12</h2><p>Message for stud12 goes here...</p></div></div>
+
+<script>
+// mag bubukas yung popup tangina 
+for (let i = 1; i <= 12; i++) {
+    let stud = document.querySelector(".stud" + i);
+    if (stud) {
+        stud.addEventListener("click", () => {
+            document.getElementById("popup" + i).style.display = "flex";
+        });
+    }
+}
+
+// isasara nito yung popup bullshit!
+document.querySelectorAll(".close").forEach(btn => {
+    btn.addEventListener("click", () => {
+        let popupID = btn.dataset.popup;
+        document.getElementById(popupID).style.display = "none";
+    });
+});
+</script>
+
+</body>
+</html>

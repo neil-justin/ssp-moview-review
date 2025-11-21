@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIE REVIEWS</title>
+    <style>
+        html,body{
+            margin: 0;
+            padding:0;
+            background-color: black;
+        }
+
+        .navi{
+            color: rgb(230, 7, 7);
+            background-color: rgb(23, 27, 26);
+            height: 80px;
+            font-size: 50px;
+            margin-top: 0px;
+           
+            display: flex;
+            align-items: center;
+            transition:0.5s;
+        }
+
+        .navi:hover{
+            height: 90px;
+            background-color: rgb(49, 48, 48);
+            
+        }
+
+        #mov{
+            font-size: 47px;
+            margin-left: 25px;
+            transition: 0.5s;
+        }
+        #mov:hover{
+            font-size: 50px;
+            color: rgb(207, 205, 205);
+        }
+        #home{
+            color: white;
+            font-size: 28px;
+            margin-left: 290px;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+
+        #home:hover{
+            color: rgb(170, 147, 147);
+            font-size:33px ;
+        }
+        #details{
+             color: white;
+            font-size: 25px;
+            margin-left: 50px;
+            transition: 0.5s;
+            text-decoration: none;
+
+        }
+
+        #details:hover{
+            color: rgb(170, 147, 147);
+            cursor: pointer;
+            font-size: 30px;
+        }
+        #critique{
+            color: white;
+            font-size: 25px;
+            margin-left: 50px;
+            transition: 0.5s;
+             text-decoration: none;
+
+        }
+        #critique:hover{
+            color:  rgb(170, 147, 147);
+            cursor: pointer;
+            font-size: 30px;
+           
+        }
+        #about{
+            color: white;
+            font-size: 25px;
+            margin-left: 50px;
+            transition: 0.5s;
+
+        }
+        #about:hover{
+            color: rgb(170, 147, 147);
+            cursor: pointer;
+            font-size: 30px;
+        }
+        #main{
+            height: 500px;
+            width:800px;
+            margin-top:20px;
+            margin-left: 20px;
+            border-color: aliceblue;
+            border-radius: 20px;
+            display: inline-block;
+            transition: 0.5s;
+        }
+        #main:hover{
+            opacity: 0.5;
+            cursor: pointer;
+
+        }
+        .div2{
+            background-color: black ;
+            border: 2px solid rgb(228, 40, 40);
+            width: 1300px;
+            margin-left: 20px;
+            border-radius: 20px;
+            margin-top: 10px;
+            height: 540px;
+            position: relative; 
+            display: flex;
+
+
+            
+}
+        #title{
+            color: white;
+            display: inline-block;
+            margin-top: 10px;
+            position: absolute;
+            top: 20px;
+            left: 900px;
+            font-size: 60px;
+        }
+        p{
+            color:white;
+            display: inline-block;
+            margin-top: 140px;
+            margin-left: 20px;
+            font-size: 35px;
+
+        }
+        .boton{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding: 15px 25px;
+                background: rgb(240, 38, 38);
+                color: white;
+                border: none;
+                border-radius: 10px;
+                font-size: 20px;
+                display: none;
+                transition: 0.5;
+                text-decoration: none;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                
+        }
+        .boton:hover{
+            background-color:rgb(245, 70, 70) ;
+            opacity: 0.5;
+            display:none;
+            
+
+        }
+
+        .div3:hover .boton{
+            display: block;
+        }
+
+        .div3:hover #main {
+    display: block;
+    opacity: 0.5;
+}
+
+.div3{
+    position: relative;
+    display: inline-block;
+}
+      
+
+    </style>
+</head>
+        <body>
+
+            <nav class="navi">
+                    <h1 id="mov">MOVIE REVIEWS </h1> 
+                    <a id="home" href="Landing.html" >Home </a>
+                    <a id="details" href="details.html">DETAILS</a>
+                    <a id="critique" href="critique.html">CRITIQUE</a>
+                    <a id="about" href="about.html">ABOUT US</a>
+
+                 
+                    
+            </nav>
+         <div class="div2">
+             <div class="div3">
+                
+           <a href="https://www.youtube.com/watch?v=y_05ZosRCGA" target="_blank">
+                <img id="main"src="img/main.png" > </a>
+                <a class="boton" href="https://www.youtube.com/watch?v=y_05ZosRCGA "target="_blank">PLAY</a>
+                <h2 id="title">MARKOVA</h2>
+
+        </div>
+
+             <p> 
+                The Comfor Guy is a biographical fil about Walter Dempster  Jr., guy Filipinp who
+                was forced into sexual slavery during the japanese occupation. The movie shows his struggles
+                ,Courage and resilience in surviving discrimination and wartime abuse.
+            </p>
+
+         </div>
+            
+        </body>
+</html>
