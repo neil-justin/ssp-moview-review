@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1024">
     <title>Details</title>
 
     <style>
-    html,body{   
-        margin: 0;
-        padding:0;
-        background-color: black;
-    }
- 
-     .navi{
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        .navi {
             color: rgb(230, 7, 7);
             background-color: rgb(23, 27, 26);
             height: 80px;
             font-size: 50px;
             margin-top: 0px;
-           
+
             display: flex;
             align-items: center;
-            transition:0.5s;
+            transition: 0.5s;
         }
 
-        .navi:hover{
+        .navi:hover {
             height: 90px;
             background-color: rgb(49, 48, 48);
-            
+
         }
 
-        #mov{
+        #mov {
             font-size: 47px;
             margin-left: 25px;
             transition: 0.5s;
         }
-        #mov:hover{
+
+        #mov:hover {
             font-size: 50px;
             color: rgb(231, 223, 223);
         }
-        #home{
+
+        #home {
             color: white;
             font-size: 28px;
             margin-left: 290px;
@@ -47,25 +51,12 @@
             transition: 0.5s;
         }
 
-        #home:hover{
+        #home:hover {
             color: rgb(170, 147, 147);
-            font-size:33px ;
-        }
-        #details{
-             color: white;
-            font-size: 25px;
-            margin-left: 50px;
-            transition: 0.5s;
-            text-decoration: none;
-
+            font-size: 33px;
         }
 
-        #details:hover{
-            color: rgb(170, 147, 147);
-            cursor: pointer;
-            font-size: 30px;
-        }
-        #critique{
+        #details {
             color: white;
             font-size: 25px;
             margin-left: 50px;
@@ -73,12 +64,14 @@
             text-decoration: none;
 
         }
-        #critique:hover{
-            color:  rgb(170, 147, 147);
+
+        #details:hover {
+            color: rgb(170, 147, 147);
             cursor: pointer;
             font-size: 30px;
         }
-        #about{
+
+        #critique {
             color: white;
             font-size: 25px;
             margin-left: 50px;
@@ -86,12 +79,29 @@
             text-decoration: none;
 
         }
-        #about:hover{
+
+        #critique:hover {
             color: rgb(170, 147, 147);
             cursor: pointer;
             font-size: 30px;
         }
-        #mark{
+
+        #about {
+            color: white;
+            font-size: 25px;
+            margin-left: 50px;
+            transition: 0.5s;
+            text-decoration: none;
+
+        }
+
+        #about:hover {
+            color: rgb(170, 147, 147);
+            cursor: pointer;
+            font-size: 30px;
+        }
+
+        #mark {
             height: 500px;
             width: 1230px;
             display: inline-block;
@@ -100,245 +110,268 @@
             border-radius: 20px;
             transition: 0.5s;
         }
-        #mark:hover{
+
+        #mark:hover {
             opacity: 0.6;
             cursor: pointer;
-            
+
         }
 
-.div1{
-    background-color: rgb(41, 39, 39);
-    height: 270px; 
-    width: 1000px;
-    display: inline-block;
-    margin-left: 54px;
-    border-radius: 20px;
-    margin-top: 20px;
-    transition: 0.5s;
-    color: white;
-    
-
-}
-.div1:hover{
-    cursor: pointer;
-    width: 1100px;
-    font-size:50px ;
-    background-color:rgb(201, 199, 199);
-    color: rgb(63, 63, 63);
-
-}
-#abotda{
-    
-    margin-left: 17px;
-    font-weight: bold;
-    font-size: 40px;
-    margin-top: 20px;
-    display: inline-block;
-    margin-bottom: 0px;
-
-}
-#p1{
-    
-    display: inline-block;
-    margin-top: 24px;
-    font-size: 30px;
-    margin-left:25px;
-    margin-right: 20px;
-}
-.div2{
-    height: 370px;
-    width: 1000px;
-    background-color: rgb(41, 39, 39) ;
-    margin-left: 50px;
-    border-radius: 20px;color: white;
-    margin-top: 20px;
-    display: flex;
-    align-items: flex-start;  
-    color: white;
-    transition: 0.5s;
-
-}
-
-.div2:hover{
-    background-color: rgb(201, 199, 199);
-    color:  rgb(63, 63, 63);
-    cursor: pointer;
-    
-
-}
+        .div1 {
+            background-color: rgb(41, 39, 39);
+            height: 270px;
+            width: 1000px;
+            display: inline-block;
+            margin-left: 54px;
+            border-radius: 20px;
+            margin-top: 20px;
+            transition: 0.5s;
+            color: white;
 
 
-#portales{
-    margin-left:10px ;
-    font-size: 50px;
-    display:inline-block;
-    margin-top: 29px;
-    margin-left: 150px;
-    
-}
-#gil{
-    height: 300px;
-    width: 250px;
-    border-radius: 30px;
-    margin-left: 15px;
-    margin-top: 20px;
-    display: block;
-   margin-right: 30px; 
+        }
+
+        .div1:hover {
+            cursor: pointer;
+            width: 1100px;
+            font-size: 50px;
+            background-color: rgb(201, 199, 199);
+            color: rgb(63, 63, 63);
+
+        }
+
+        #abotda {
+
+            margin-left: 17px;
+            font-weight: bold;
+            font-size: 40px;
+            margin-top: 20px;
+            display: inline-block;
+            margin-bottom: 0px;
+
+        }
+
+        #p1 {
+
+            display: inline-block;
+            margin-top: 24px;
+            font-size: 30px;
+            margin-left: 25px;
+            margin-right: 20px;
+        }
+
+        .div2 {
+            height: 370px;
+            width: 1000px;
+            background-color: rgb(41, 39, 39);
+            margin-left: 50px;
+            border-radius: 20px;
+            color: white;
+            margin-top: 20px;
+            display: flex;
+            align-items: flex-start;
+            color: white;
+            transition: 0.5s;
+
+        }
+
+        .div2:hover {
+            background-color: rgb(201, 199, 199);
+            color: rgb(63, 63, 63);
+            cursor: pointer;
 
 
-}
-#p2{
-    margin-top: 20px;
-    font-size:30px;
-    display: inline-block;
-    margin-right: 50px;
-    margin-left: 0px;
+        }
 
 
-}
-.textbox{
-    display: flex;
-    flex-direction: column;   /* places H2 on top and P below */
-    margin-left: 20px;
+        #portales {
+            margin-left: 10px;
+            font-size: 50px;
+            display: inline-block;
+            margin-top: 29px;
+            margin-left: 150px;
 
-}
+        }
 
-.div3{
-    
-    height: 370px;
-    width: 1000px;
-    background-color: rgb(41, 39, 39) ;
-    margin-left: 240px;
-    border-radius: 20px;color: white;
-    margin-top: 20px;
-    display: flex;
-    align-items: flex-start;  
-    color: white;
-    transition: 0.5s;
-
-}
-
-.div3:hover{
-   background-color: rgb(201, 199, 199);
-    color:  rgb(63, 63, 63);
-    cursor: pointer;
-    
-    
-}
-#sypno{
-    font-size:50px ;
-    margin-left: 20px;
-    margin-bottom: 0px;
-}
-
-#dol{
-    height: 300px;
-    width: 300px;
-    border-radius: 30px;
-    margin-left:80px;
-    margin-top: 25px;
-    display: inline-block;
-    margin-right: 20px;
-   
-}
-
-.tag2{
-    display: flex;
-    flex-direction: column;
-}
-#p3{
-    margin-left: 18px;
-    font-size: 25px;
-    margin-top: 10px;
-}
-
-.reference{
-    color: white;
-    height: 150px;
-    width: 450px;
-    background-color:rgb(155, 149, 149) ;
-    margin-left: 15;
-    margin-left: 20px;
-    margin-top: 25px;
-    border-radius: 20px;
-    transition: 0.5s;
-    
-}
-.reference:hover{
-    background-color: rgb(201, 199, 199);
-    cursor: pointer;
-    color: rgb(63, 63, 63);
-}
+        #gil {
+            height: 300px;
+            width: 250px;
+            border-radius: 30px;
+            margin-left: 15px;
+            margin-top: 20px;
+            display: block;
+            margin-right: 30px;
 
 
-#link1{
-    padding-top:25px;
-    padding-left: 40px;
-    font-size: 25px;    
-}
+        }
 
-#links1{
-    display: block;
-    padding-left: 40px;
-    padding-top: 0px;
-    font-size: 20px;
-    text-decoration: none;
-    color: rgb(252, 250, 250);
-    margin-top:10px;
+        #p2 {
+            margin-top: 20px;
+            font-size: 30px;
+            display: inline-block;
+            margin-right: 50px;
+            margin-left: 0px;
 
-}
 
-#links2{
-    display: block;
-    padding-left: 40px;
-    padding-top: 0px;
-    font-size: 20px;
-    text-decoration: none;
-    color: rgb(252, 250, 250);
-    margin-top:10px;
+        }
 
-}
-</style>
+        .textbox {
+            display: flex;
+            flex-direction: column;
+            /* places H2 on top and P below */
+            margin-left: 20px;
+
+        }
+
+        .div3 {
+
+            height: 370px;
+            width: 1000px;
+            background-color: rgb(41, 39, 39);
+            margin-left: 240px;
+            border-radius: 20px;
+            color: white;
+            margin-top: 20px;
+            display: flex;
+            align-items: flex-start;
+            color: white;
+            transition: 0.5s;
+
+        }
+
+        .div3:hover {
+            background-color: rgb(201, 199, 199);
+            color: rgb(63, 63, 63);
+            cursor: pointer;
+
+
+        }
+
+        #sypno {
+            font-size: 50px;
+            margin-left: 20px;
+            margin-bottom: 0px;
+        }
+
+        #dol {
+            height: 300px;
+            width: 300px;
+            border-radius: 30px;
+            margin-left: 80px;
+            margin-top: 25px;
+            display: inline-block;
+            margin-right: 20px;
+
+        }
+
+        .tag2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #p3 {
+            margin-left: 18px;
+            font-size: 25px;
+            margin-top: 10px;
+        }
+
+        .reference {
+            color: white;
+            height: 150px;
+            width: 450px;
+            background-color: rgb(155, 149, 149);
+            margin-left: 15;
+            margin-left: 20px;
+            margin-top: 25px;
+            border-radius: 20px;
+            transition: 0.5s;
+
+        }
+
+        .reference:hover {
+            background-color: rgb(201, 199, 199);
+            cursor: pointer;
+            color: rgb(63, 63, 63);
+        }
+
+
+        #link1 {
+            padding-top: 25px;
+            padding-left: 40px;
+            font-size: 25px;
+        }
+
+        #links1 {
+            display: block;
+            padding-left: 40px;
+            padding-top: 0px;
+            font-size: 20px;
+            text-decoration: none;
+            color: rgb(252, 250, 250);
+            margin-top: 10px;
+
+        }
+
+        #links2 {
+            display: block;
+            padding-left: 40px;
+            padding-top: 0px;
+            font-size: 20px;
+            text-decoration: none;
+            color: rgb(252, 250, 250);
+            margin-top: 10px;
+
+        }
+    </style>
 </head>
+
 <body>
     <nav class="navi">
-                    <h1 id="mov">MOVIE REVIEWS </h1> 
-                    <a id="home" href="index.html" target="">Home </a>
-                    <a id="details" href="details.html">DETAILS</a>
-                    <a id="critique" href="critique.html">CRITIQUE</a>
-                    <a id="about" href="about.htmls">ABOUT US</a>        
+        <h1 id="mov">MOVIE REVIEWS </h1>
+        <a id="home" href="index.html" target="">Home </a>
+        <a id="details" href="details.html">DETAILS</a>
+        <a id="critique" href="critique.html">CRITIQUE</a>
+        <a id="about" href="about.htmls">ABOUT US</a>
     </nav>
     <img id="mark" src="img/mark.jpg">
 
     <div class="div1">
         <h2 id="abotda">About the Movie</h2>
-        <p id="p1"> The Comfor Guy is a biographical fil about Walter Dempster  Jr., guy Filipinp who
-                was forced into sexual slavery during the japanese occupation. The movie shows his struggles
-                ,Courage and resilience in surviving discrimination and wartime abuse.</p>
+        <p id="p1"> The Comfor Guy is a biographical fil about Walter Dempster Jr., guy Filipinp who
+            was forced into sexual slavery during the japanese occupation. The movie shows his struggles
+            ,Courage and resilience in surviving discrimination and wartime abuse.</p>
     </div>
 
     <div class="div2">
         <img id="gil" src="img/gil.webp">
-        <div class="textbox" > 
-                <h2 id="portales">Gil M. Portales</h2>
-                <p id="p2"> Gil Portes was a respected Filipino film director known for creating socially relevant and critically acclaimed movies. He directed Markova: Comfort Gay, one of his most notable works.</p>
-        </div>  
+        <div class="textbox">
+            <h2 id="portales">Gil M. Portales</h2>
+            <p id="p2"> Gil Portes was a respected Filipino film director known for creating socially relevant and
+                critically acclaimed movies. He directed Markova: Comfort Gay, one of his most notable works.</p>
+        </div>
     </div>
 
     <div class="div3">
-       <div class="tag2">
-             <h2 id="sypno">SYPNOSIS</h2>
-             <p id="p3">Markova: Comfort Gay follows the life of Walter Dempster Jr., the last surviving Filipino “comfort gay” who endured sexual slavery under Japanese occupation during World War II. Through his recounting, the film reveals his painful experiences, the discrimination he faced as a gay man, and his strength, resilience, and courage as he survives trauma, abuse, and a lifetime of societal prejudice.</p>
+        <div class="tag2">
+            <h2 id="sypno">SYPNOSIS</h2>
+            <p id="p3">Markova: Comfort Gay follows the life of Walter Dempster Jr., the last surviving Filipino
+                “comfort gay” who endured sexual slavery under Japanese occupation during World War II. Through his
+                recounting, the film reveals his painful experiences, the discrimination he faced as a gay man, and his
+                strength, resilience, and courage as he survives trauma, abuse, and a lifetime of societal prejudice.
+            </p>
         </div>
-        <img id ="dol" src="img/dol.jpg">
+        <img id="dol" src="img/dol.jpg">
     </div>
 
     <div class="reference">
         <h3 id="link1" href="https://www.facebook.com/"> Reference</h3>
 
         <a id="links1" href="https://en.wikipedia.org/wiki/Markova:_Comfort_Gay">Gil M. Portales</a>
-        <a id="links2" href="https://www.bing.com/images/search?view=detailV2&ccid=Hn86zQSU&id=923D57FECEAE4F786B2A3ABB7EECC7FC0FBF3344&thid=OIP.Hn86zQSUMip5NAMyZ-Fp7AHaEK&mediaurl=https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FVideo124%2Fv4%2F24%2F11%2Fbf%2F2411bf98-3723-201e-ca3c-6925a29f8f37%2Fpr_source.png%2F1200x675.jpg&exph=675&expw=1200&q=markova+comfort+guy&form=IRPRST&ck=E78F271B55F4D5B139C6FEB1DDE9A697&selectedindex=0&itb=0&cw=1222&ch=585&ajaxhist=0&ajaxserp=0&vt=0&sim=11" target="_blank">images</a>
+        <a id="links2"
+            href="https://www.bing.com/images/search?view=detailV2&ccid=Hn86zQSU&id=923D57FECEAE4F786B2A3ABB7EECC7FC0FBF3344&thid=OIP.Hn86zQSUMip5NAMyZ-Fp7AHaEK&mediaurl=https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FVideo124%2Fv4%2F24%2F11%2Fbf%2F2411bf98-3723-201e-ca3c-6925a29f8f37%2Fpr_source.png%2F1200x675.jpg&exph=675&expw=1200&q=markova+comfort+guy&form=IRPRST&ck=E78F271B55F4D5B139C6FEB1DDE9A697&selectedindex=0&itb=0&cw=1222&ch=585&ajaxhist=0&ajaxserp=0&vt=0&sim=11"
+            target="_blank">images</a>
     </div>
-    
+
 </body>
+
 </html>
